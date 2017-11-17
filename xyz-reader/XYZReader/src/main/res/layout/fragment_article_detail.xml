@@ -27,10 +27,11 @@
 
                 <ImageView
                     android:id="@+id/photo"
-                    android:layout_width="@dimen/detail_photo_height"
+                    android:layout_width="match_parent"
                     android:layout_height="@dimen/detail_photo_height"
+                    android:scaleType="centerCrop"
                     android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="@dimen/detail_photo_top_margin" />
+                     />
 
             </FrameLayout>
 
@@ -77,6 +78,7 @@
                         android:textColor="#8fff" />
                 </LinearLayout>
 
+
                 <TextView
                     android:id="@+id/article_body"
                     style="?android:attr/textAppearanceMedium"
@@ -102,16 +104,11 @@
         android:layout_marginBottom="@dimen/fab_margin"
         android:layout_marginEnd="@dimen/fab_margin"
         android:layout_marginRight="@dimen/fab_margin"
-        android:background="@drawable/add_fab_background"
-        style="@style/Theme.Bacon"
-        app:backgroundTint="@color/theme_accent"
         android:contentDescription="@string/action_share"
         app:elevation="@dimen/fab_elevation_resting"
         app:pressedTranslationZ="@dimen/fab_press_translation_z"
-
         android:src="@drawable/ic_share"
         android:stateListAnimator="@anim/fab_state_list_anim"
-         />
-
+        tools:targetApi="lollipop" />
 
 </com.example.xyzreader.ui.DrawInsetsFrameLayout>
